@@ -23,7 +23,7 @@
 # git diff 파일 내부의 변화까지 보여줌
 
 # git add "[file name]" 파일을 stage(혹은 index)에 추가
-#git add . 파일 전부 추가
+# git add . 파일 전부 추가
 
 # git commit
 #스테이지에 있는 파일들을 커밋함. 

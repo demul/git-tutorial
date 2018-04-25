@@ -1,3 +1,9 @@
+#이 저장소는 git bash 실습을 위해 사용한 repository이다.
+#Pro git 1,2,3장을 읽고, 후일 까먹을 때를 대비해 내게 당장 필요할 것 같은 명령어들만 정리해두었다.
+#매트랩 파일은 그냥 작년에 구현한 mean-shift tracking 알고리즘 구현체이다.
+
+
+
 # git config --global user.name "[name]"
 # git config --global user.email "[email]"
 기본 사용자 변수를 전역으로 설정
@@ -167,8 +173,6 @@ Merge여부 확인할 때.
 
 # git ls-remote "[remote name]"
 모든 리모트의 브랜치, 태그 등등 조회
-
-
 
 
 

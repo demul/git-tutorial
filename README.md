@@ -1,12 +1,12 @@
 # git config --global user.name "[name]"
 # git config --global user.email "[email]"
-#기본 사용자 변수를 전역으로 설정
+기본 사용자 변수를 전역으로 설정
 
 # git config --global alias.[단축키 명] [명령어]
-#전역 단축키 설정
+전역 단축키 설정
 
 # git init
-#해당 폴더에 git repository 생성
+해당 폴더에 git repository 생성
 
 
 
@@ -14,11 +14,11 @@
 
 
 # git status
-#파일이 tackle인지 untackle인지 (애초에 추적대상인지 아닌지)
-#파일이 추가되거나 삭제되었는지
-#파일이 변경되었는지 
-#파일이 Merge중에 충돌을 일으켰는지 알려줌
-#--cached 혹은 --staged를 추가하면 이미 add되어 스테이지에 있는 파일을 대상으로 변화를 알려줌 
+파일이 tackle인지 untackle인지 (애초에 추적대상인지 아닌지)
+파일이 추가되거나 삭제되었는지
+파일이 변경되었는지 
+파일이 Merge중에 충돌을 일으켰는지 알려줌
+--cached 혹은 --staged를 추가하면 이미 add되어 스테이지에 있는 파일을 대상으로 변화를 알려줌 
 
 # git diff 파일 내부의 변화까지 보여줌
 

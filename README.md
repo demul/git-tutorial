@@ -25,9 +25,13 @@ Pro git 1,2,3장을 읽고, 후일 까먹을 때를 대비해 내게 당장 필�
 
 # git status
 파일이 tackle인지 untackle인지 (애초에 추적대상인지 아닌지)
+
 파일이 추가되거나 삭제되었는지
+
 파일이 변경되었는지 
+
 파일이 Merge중에 충돌을 일으켰는지 알려줌
+
 --cached 혹은 --staged를 추가하면 이미 add되어 스테이지에 있는 파일을 대상으로 변화를 알려줌 
 
 # git diff 
@@ -40,10 +44,12 @@ Pro git 1,2,3장을 읽고, 후일 까먹을 때를 대비해 내게 당장 필�
 
 # git commit
 스테이지에 있는 파일들을 커밋함. 
+
 vim편집기 창으로 가는데 변경사항을 "큰 따옴표"없이 입력하고 esc누르고 :wq를 입력하면 된다. (:w는 저장, :q는편집기 종료)
 
 # git commit -a
 걍 git add . 와 git commit을 합친거라고 보면 됨.
+
 add와 commit을 한번에
 
 # git commit -m "[commit message]"
@@ -51,6 +57,7 @@ add와 commit을 한번에
 
 # git rm "[file name]"
 파일 삭제. 파일을 Working Directory에서만 지우면 git status했을 때 unstage되었다고 하면서 계속 찾는다.
+
 따라서 git rm 해줘서 git 내에서도 지워줘야 함.
 
 # git rm -f "[file name]"
@@ -98,6 +105,7 @@ tag들 조회
 tag 붙이기
 # git checkout -b "[branch name]" "[tag name]"
 tag가 붙여진 특정 커밋기반의 브랜치 생성. 이 브랜치에서 작업한다고 해서 우리가 가져온 태그의 커밋이 바뀌는 것은 아니다. 
+
 해당 커밋을 복사한 아예 새로운 브랜치와 커밋을 생성한다 보면 됨.
 
 
@@ -122,6 +130,7 @@ Remote Repository(리모트 저장소)의 포인터를 추가
 
 # get merge "[remote name]"
 fetch로 가져온 리모트 저장소의 모든 Remote Branch(리모트 브랜치)의 Commit(커밋)을 연결된 Local Branch(로컬 브랜치)의 커밋에 Merge 
+
 특정 리모트 브랜치에서만 Merge할거면
 # get merge "[remote name]"/"[remote branch]"
 # git pull
@@ -131,6 +140,7 @@ fetch로 가져온 리모트 저장소의 모든 Remote Branch(리모트 브랜�
 # git push "[remote name]" "[local branch name]"
 # local에서 stage에 있는 commit을 Remote Branch로 Merge
 자신과 같은 이름의 리모트 브랜치로만 Push된다. (로컬의 브랜치와 리모트 브랜치의 이름이 같아야 함)
+
 다를 경우엔
 # git push "[remote name]" "[local branch name]":"[remote branch name]":
 이렇게 사용하라.
@@ -190,10 +200,15 @@ Merge여부 확인할 때.
 
 #사용 예 :
 #git checkout experiment
+
 #git rebase master
+
 #it checkout master
+
 #git merge experiment
+
 #Merge하지 않고 Fast-Forward로 처리 가능함. 
+
 ##########(단 이미 리모트 저장소에 Push한 커밋에 대해서는 절대 하지 말 것 !!!!!!!!!!!!!!!!!!!!)############
 
 
@@ -212,15 +227,20 @@ Merge여부 확인할 때.
 
 # git branch -vv
 로컬 브랜치들과 각각에 연결된 리모트 브랜치들과 커밋의 앞서거나 뒤쳐지는 상황등을 다 보여줌
+
 ##########(단 현재 fetch된 리모트에 대한 정보이기 때문에 최신 정보를 확인하려면 당연히 
+
 # git fetch; git branch -vv
+
 처럼하여야 할 것임!!!!!!!)
 
 # git push "[remote name]" --delete "[remote branch]"
 리모트 브랜치 삭제.
 
 로컬에 있는 리모트 저장소 포인터를 제거하는
+
 #git remote rm "[remote name]"와는 다르게 아예 리모트 서버에 있는 리모트 브랜치를 제거해버린다.
+
 그냥 깃허브웹에서 제공하는 GUI를 이용하는 것이 나아보임.
 
 
